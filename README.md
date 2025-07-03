@@ -1,5 +1,7 @@
 # road_accident_visualisation
 
+# Road Accident Data Visualization by Area
+
 This project provides a Python script to visualize road accident data for a specific Local Authority District using interactive maps generated with the Folium library. The script reads accident data from a CSV file, filters it based on user input, and creates an HTML map displaying accident locations as colored markers within clusters and a weighted heatmap indicating accident density and severity.
 
 ## Features
@@ -16,32 +18,32 @@ This project provides a Python script to visualize road accident data for a spec
 
 -   Python 3.x
 -   The following Python libraries: `pandas`, `folium`.
--   A CSV file named `Road Accident Data.csv` containing accident data, including at least the following columns:
-    -   `Local_Authority_(District)`
-    -   `Latitude`
-    -   `Longitude`
-    -   `Accident_Severity` (expected values like 'Slight', 'Serious', 'Fatal')
+-   The Road Accident (United Kingdom (UK)) Dataset from Kaggle.
 
 ## Setup
 
 1.  **Clone the repository:**
     ```bash
-    git https://github.com/rishu1947-ops/road_accident_visualisation
-    cd road_accident_visualisation
+    git clone https://github.com/rishu1947-ops/road_accident_visualisation
+    cd rishu1947-ops
     ```
 
-2.  **Place the dataset:**
-    Ensure your `Road Accident Data.csv` file is in the same directory as the Python script (`map_accidents_by_area.py`).
-
-3.  **Install dependencies:**
+2.  **Install dependencies:**
     It's recommended to use a virtual environment.
     ```bash
     pip install -r requirements.txt
     ```
 
+3.  **Obtain the dataset:**
+    The dataset file is too large to be stored directly in this repository. You need to download it from its original source:
+    *   Go to the Kaggle dataset page: [Road Accident (United Kingdom (UK)) Dataset](https://www.kaggle.com/datasets/silverbottle/road-accident-united-kingdom-uk-dataset)
+    *   Download the dataset (you may need a Kaggle account and agree to the dataset's terms). Look for a download button or link for the entire dataset.
+    *   The downloaded file might be a zip archive containing `Road Accident Data.csv`. Extract the `Road Accident Data.csv` file.
+    *   **Place the `Road Accident Data.csv` file in the same directory as the `map_accidents_by_area.py` script.**
+
 ## How to Run
 
-1.  Make sure you have completed the setup steps.
+1.  Make sure you have completed the setup steps and have placed the `Road Accident Data.csv` file in the correct directory.
 2.  Run the Python script from your terminal:
     ```bash
     python map_accidents_by_area.py
